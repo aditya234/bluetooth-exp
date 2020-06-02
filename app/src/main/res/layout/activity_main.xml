@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bluetooth ON" />
+
+            <Button
+                android:id="@+id/btOFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bluetooth OFF" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/showDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show" />
+
+            <Button
+                android:id="@+id/scanDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/enableDevice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Devices"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
